@@ -1,48 +1,41 @@
 # vue-rabbit-shopping
 
-This template should help get you started developing with Vue 3 in Vite.
+技术栈： Vue3、Pinia、Vite、TypeScript、Element-UI Plus.
+代码规范：ESlint、prettier.
 
-## Recommended IDE Setup
+## 推荐 IDE 配置
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (禁用vetur).
 
-## Recommended Browser Setup
+## 推荐浏览器配置
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+- 基于 Chromium 的浏览器（Chrome、Edge、Brave 等）：
   - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
   - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
+- Firefox 浏览器：
   - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
   - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-## Type Support for `.vue` Imports in TS
+## 项目接口
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- 项目接口使用黑马提供的接口：
+ - 接口基地址：https://pcapi-xiaotuxian-front-devtest.itheima.net
+ - 接口文档：https://s.apifox.cn/fa9274ac-362e-4905-806b-6135df6aa90e
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## 项目设置
 
 ```sh
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+### 开发环境编译及热重载
 
 ```sh
-pnpm dev
+pnpm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### 使用 ESLint 进行代码检查
 
 ```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
+pnpm lint-staged
 ```
