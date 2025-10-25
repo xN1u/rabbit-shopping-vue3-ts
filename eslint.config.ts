@@ -1,7 +1,10 @@
 import { globalIgnores } from 'eslint/config'
 import globals from 'globals'
 import js from '@eslint/js'
-import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
+import {
+  defineConfigWithVueTs,
+  vueTsConfigs
+} from '@vue/eslint-config-typescript'
 import pluginVue from 'eslint-plugin-vue'
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 import pluginPrettier from 'eslint-plugin-prettier'
@@ -61,10 +64,7 @@ export default defineConfigWithVueTs(
       // TypeScript特有规则
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
-      '@typescript-eslint/no-unused-vars': [
-        'warn',
-        { argsIgnorePattern: '^_' }
-      ]
+      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }]
     },
     // 关键修改：将globals移到languageOptions内部
     languageOptions: {
@@ -76,4 +76,3 @@ export default defineConfigWithVueTs(
     }
   }
 )
-    
